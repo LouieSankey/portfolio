@@ -41,6 +41,7 @@ a:hover {
 /* styles the title text */
 #title-text{
   font-size: 30px;
+  text-align: center;
 }
 
 /* centers and styles the main profile photo */
@@ -68,9 +69,9 @@ a:hover {
 
 /* styles the contact section */
 #contact-section{
-    background: black;
-    color:white;
 
+  background:black;
+  color:white;
     /* not sure why I'm getting a funny result here, 
     2px should display less padding*/
     padding-top: 2px;;
@@ -113,4 +114,57 @@ a:hover {
   }
 
 
+  /* navigation code */
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  
+  header nav ul li {
+    list-style-type: none;
+  }
+  
+  header nav ul li a:visited {
+    color: purple;
+  }
+  
+  header nav ul li a:link {
+    color: purple;
+    padding: 0 80px 0 0;
+  }
 
+  header nav ul li a:hover {
+    color: yellow;
+  }
+
+  /* form code */
+
+  form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: gray;
+    font-family: arial;
+  }
+  form textarea {
+    height: 4.75rem;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  form input {
+  
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+ 
+  }
