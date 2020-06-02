@@ -69,13 +69,13 @@
       <hr>
       
       <!-- Portfolio -->
-    
    
         <h2 id="portfolio">Portfolio</h2>
 
-        <article>
-        <div class='group'>
-          <div class='item'>
+        <section>
+        <ul id="portfolio-list">
+          <div  class='group'>
+          <li class='item'>
             <img src="./img/darkhorse.png" 
             class="portfolio-image"
             alt="Darkhorse - Fantasy Sports App Screenshot">
@@ -84,10 +84,9 @@
             <p>The project is built with Swift for iOS, and uses a Node.js webscraper with a Firestore database for the backend.</p>
             <p>Project Website: <a class="portfolio-link" href="https://www.darkhorse-dfs.app" target="blank">www.darkhorse-dfs.app</a></p>
             <p>Node.js Backend (Sample): <a class="portfolio-link" href="https://github.com/LouieSankey/Darkhorse_V3_NodeJS" target="blank">GitHub</a></p>
-          </div>
+          </li>
      
-     
-          <div class='item'>
+          <li class='item'>
             <img src="./img/placeholder.png" 
             class="portfolio-image"
             alt="Darkhorse - Fantasy Sports App Screenshot">
@@ -95,28 +94,29 @@
             <p>This is the first version of Darkhorse that I made for Android. </p>
             <p>Its a working demo that you can download and play with Android Studio.</p>
             <p>Full Code: <a class="portfolio-link" href="https://github.com/LouieSankey/Darkhorse_V2_Android"  target="blank">GitHub</a></p>
+          </li>
           </div>
-        </div>  
-    
-        <div class='group'>
-          <div class='item'>
+  
+          <group class='group'>
+          <li class='item'>
             <img src="./img/placeholder.png" 
             class="portfolio-image"
             alt="Darkhorse - Fantasy Sports App Screenshot">
             <h3>Project 3</h3>
             <p>Project 3 description.</p>
-          </div>
+          </li>
   
-  
-          <div class='item'>
+          <li class='item'>
             <img src="./img/placeholder.png" 
             class="portfolio-image"
             alt="Darkhorse - Fantasy Sports App Screenshot">
             <h3>Project 4</h3>
             <p>Project 4 description.</p>
-          </div>
-        </div>  
-      </article>
+          </li>
+
+        </group>
+        </ul>  
+      </section>
 
     
 
@@ -133,15 +133,15 @@
           action="https://formspree.io/lmsankey415@gmail.com"
           method="POST"
         >
-          <label>
+          <label class="form-label">
             Your Name:
             <input type="text" name="name">
           </label>
-          <label>
+          <labelclass="form-label">
             Your Email:
             <input type="email" name="_replyto">
           </label>
-          <label>
+          <labelclass="form-label">
             Message:
             <textarea name="message"></textarea>
           </label>
