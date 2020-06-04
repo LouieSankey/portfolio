@@ -69,36 +69,31 @@ a:hover {
 
 /* styles the contact section */
 #contact-section{
-
   background:black;
   color:white;
-    /* not sure why I'm getting a funny result here, 
-    2px should display less padding*/
     padding-top: 2px;;
     padding-bottom: 2px;
 }
 
-#portfolio-list{
-  list-style: none;
-  padding-left: 0;
-}
-
 
 /* provides css for responsive layout items in the portfolio */
-.group {
-    display: flex;
-    flex-direction: column;
+#portfolio-list {
     margin-bottom: 100px;
+    list-style: none;
+    padding-left: 0;
+    flex-direction: column;
+
+  }
+
+  .item {
+    flex: 1 50%;
+    padding: 10px; 
+    box-sizing: border-box;
+ 
   }
 
   .wrapper {
     width: 100%;
-  }
-
-  .item {
-    flex: 1;
-    margin: 10px;
- 
   }
 
   .portfolio-image {
@@ -108,18 +103,8 @@ a:hover {
     border-color: yellow;
    }
 
-@media all and (min-width: 800px) {
-    .wrapper {
-      width: 80%;
-      margin: auto;
-    }
+
   
-    .group {
-      flex-direction: row;
-    }
-  }
-
-
   /* navigation code */
   header nav {
     display: flex;
@@ -172,9 +157,30 @@ a:hover {
   }
 
   form input {
-  
     width: 100%;
     color: #000;
     font-size: 16px;
  
+  }
+
+  @media all and (min-width: 800px) {
+    .wrapper {
+      width: 80%;
+      margin: auto;
+    }
+  
+    #portfolio-list {
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 100px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .item {
+      flex: 1 50%;
+      padding: 10px; 
+    }
+
   }
