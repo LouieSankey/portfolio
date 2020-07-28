@@ -1,186 +1,203 @@
 /* provides global styling*/
-html{
+
+html {
     font-family: sans-serif;
 }
 
+
 /* adds padding to all horizontal lines */
-hr{
-    margin-top:30px;
+
+hr {
+    margin-top: 30px;
 }
 
+
 /* styles the links using pseudo-classes */
+
 a:link {
     color: yellow;
-  }
-a:visited {
+}
 
-    color:yellow;
-  }
+a:visited {
+    color: yellow;
+}
+
 a:hover {
     color: #FF00FF;
-  }
+}
 
-  /* links for the portfolio section */
 
-  a.portfolio-link:link {
+/* links for the portfolio section */
+
+a.portfolio-link:link {
     color: purple;
-  }
-  a.portfolio-link:visited {
+}
 
-    color:purple;
-  }
-  a.portfolio-link:hover {
+a.portfolio-link:visited {
+    color: purple;
+}
+
+a.portfolio-link:hover {
     color: yellow;
-  }
+}
+
 
 /* provides a class for centering any text fields */
-.center-text{
+
+.center-text {
     text-align: center;
 }
 
+
 /* styles the title text */
-#title-text{
-  font-size: 30px;
-  text-align: center;
+
+#title-text {
+    font-size: 30px;
+    text-align: center;
 }
 
+
 /* centers and styles the main profile photo */
-#profile-photo{
-    width:300px;
-    height:270px;
-    padding:20px;
+
+#profile-photo {
+    width: 300px;
+    height: 270px;
+    padding: 20px;
     display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 
 /* styles the image behind the profile photo */
-#photo-background{
+
+#photo-background {
     background-image: url('./img/stars.jpg')
 }
 
+
 /* styles the special divider with scoll and email options */
-#scroll-bar{
+
+#scroll-bar {
     background-color: rgb(0, 0, 0);
     color: white;
     padding: 4px;
 }
 
+
 /* styles the contact section */
-#contact-section{
-  background:black;
-  color:white;
-    padding-top: 2px;;
+
+#contact-section {
+    background: black;
+    color: white;
+    padding-top: 2px;
+    ;
     padding-bottom: 2px;
 }
 
 
 /* provides css for responsive layout items in the portfolio */
+
 #portfolio-list {
     margin-bottom: 100px;
     list-style: none;
     padding-left: 0;
     flex-direction: column;
+}
 
-  }
-
-  .item {
+.item {
     flex: 1 50%;
-    padding: 10px; 
+    padding: 10px;
     box-sizing: border-box;
- 
-  }
+}
 
-  .wrapper {
+.wrapper {
     width: 100%;
-  }
+}
 
-  .portfolio-image {
-    width: 100%; 
+.portfolio-image {
+    width: 100%;
     border-style: solid;
     border-width: 4px;
-    border-color: yellow;
-   }
+    border-color: black;
+}
 
 
-  
-  /* navigation code */
-  header nav {
+/* navigation code */
+
+header nav {
     display: flex;
     justify-content: center;
-  }
-  
-  header nav ul {
+}
+
+header nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 0;
-  }
-  
-  header nav ul li {
+}
+
+header nav ul li {
     list-style-type: none;
-  }
-  
-  header nav ul li a:visited {
+}
+
+header nav ul li a:visited {
     color: purple;
-  }
-  
-  header nav ul li a:link {
+}
+
+header nav ul li a:link {
     color: purple;
     padding: 0 80px 0 0;
-  }
+}
 
-  header nav ul li a:hover {
+header nav ul li a:hover {
     color: yellow;
-  }
+}
 
-  /* form code */
 
-  .form-label{
-    color:black;
-  }
+/* form code */
 
-  form label {
+.form-label {
+    color: black;
+}
+
+form label {
     display: block;
     font-size: 18px;
     margin-bottom: 5px;
     color: gray;
     font-family: arial;
-  }
-  form textarea {
+}
+
+form textarea {
     height: 4.75rem;
     width: 100%;
     color: #000;
     font-size: 16px;
     margin-bottom: 20px;
-  }
+}
 
-  form input {
+form input {
     width: 100%;
     color: #000;
     font-size: 16px;
- 
-  }
+}
 
-  @media all and (min-width: 800px) {
+@media all and (min-width: 800px) {
     .wrapper {
-      width: 80%;
-      margin: auto;
+        width: 80%;
+        margin: auto;
     }
-  
     #portfolio-list {
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 100px;
-      list-style: none;
-      padding-left: 0;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        list-style: none;
+        padding-left: 0;
     }
-
     .item {
-      flex: 1 50%;
-      padding: 10px; 
+        flex: 1 50%;
+        padding: 10px;
     }
-
-  }
+}
