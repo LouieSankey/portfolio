@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width">
     <title>Louie Sankey : Software Engineer</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,13 +15,14 @@
     <header>
         <section class="wrapper">
             <h1 id="title-text" class="center-  text">Louis Sankey - Software Developer</h1>
+            <p class="center-text">(with design skills)</p>
             <nav>
                 <ul id="menu">
                     <li><a href="https://louiesankey.github.io/portfolio/">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a target="blank" href="https://github.com/louiesankey">GitHub</a></li>
-                    <li><a target="blank" href="mailto:lmsankey415@gmail.com">Contact</a></li>
+                    <li><a target="blank" href="mailto:lmsankey@ucdavis.edu">Contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -28,14 +31,14 @@
     <!-- Main -->
     <main class="wrapper">
         <div id="photo-background">
-            <img id="profile-photo" src="./img/sunglasses2.png" alt="Louis Sankey - Profile Photo">
+            <img id="profile-photo" src="./img/Louie.jpg" alt="Louis Sankey - Profile Photo">
         </div>
 
         <!-- Introduction -->
         <section>
-            <h2>Hello,</h2>
-            <p>My name is Louie Sankey and I am a software developer living in San Francisco, California.</p>
-            <p id="scroll-bar" class="center-text"><a href="#portfolio">Scroll Down</a> to check out my portfolio or <a href="mailto:lmsankey415@gmail.com">Contact Me!</a></p>
+            <h2 class="headline">Hi there,</h2>
+            <p>My name is Louis Sankey and I am a software developer living in San Francisco, Ca.</p>
+            <p id="scroll-bar" class="center-text"><a class="scroll-link" href="#portfolio">Scroll Down</a> to check out my portfolio or <a class="scroll-link" href="mailto:lmsankey415@gmail.com">Contact Me!</a></p>
         </section>
 
         <!-- About -->
@@ -70,102 +73,182 @@
 
         <!-- Portfolio -->
 
-        <h2 id="portfolio">Portfolio</h2>
-
+        <h2 id="portfolio">My Projects</h2>
+        <h3 id="portfolio">React/Node.js Apps</h3>
         <section>
-
             <ul id="portfolio-list">
                 <li class='item'>
-                    <img src="./img/darkhorse.png" class="portfolio-image" alt="Darkhorse - Fantasy Sports App Screenshot">
-                    <h3>Darkhorse - Fantasy Sports iOS App</h3>
-                    <p>This is a full scale fantasy sports app for a company I started. The NBA season is on hold, but its currently playable in demo mode through Test Flight.</p>
-                    <p>The project is built with Swift for iOS, and uses a Node.js webscraper with a Firestore database for the backend.</p>
-                    <p>Project Website: <a class="portfolio-link" href="https://www.darkhorse-dfs.app" target="blank">www.darkhorse-dfs.app</a></p>
-                    <p>Node.js Backend (Sample): <a class="portfolio-link" href="https://github.com/LouieSankey/Darkhorse_V3_NodeJS" target="blank">GitHub</a></p>
+                    <div class="li-header">
+                        <img id="quik-logo" src="./img/spiral-icon.png" alt="">
+                    </div>
+                    <img src="./img/spiral-front2.png " class="portfolio-image " alt="Darkhorse - Fantasy Sports App Screenshot ">
+                    <div class="description">
+                        <h3>Spiral - Mindfulness, Productivity.</h3>
+                        <p>Spiral provides a framework for breaking down your daily work tasks into managable timeframes.
+                        </p>
+                        <p>Challenge yourself to stay focused and work faster on a task, and let Spiral reward you with a break period when you're finished.</p>
+                        <p>Use Spiral for all your work tasks to take advantage of inbuilt time tracking and productivity insights.</p>
+                    </div>
                 </li>
 
                 <li class='item'>
-                    <img src="./img/android_white_v2.png" class="portfolio-image" alt="Darkhorse - Fantasy Sports App Screenshot">
-                    <h3>Darkhorse - Fantasy Sports Android App</h3>
-                    <p>This is the first version of Darkhorse that I made for Android. </p>
-                    <p>It's a working demo that you can download and play with Android Studio.</p>
-                    <p>Full Code: <a class="portfolio-link" href="https://github.com/LouieSankey/Darkhorse_V2_Android" target="blank">GitHub</a></p>
+                    <div class="li-header">
+                    </div>
+                    <img src="./img/insights_ui_2.png " class="portfolio-image " alt="Darkhorse - Fantasy Sports App Screenshot ">
+                    <div class=""></div>
+                    <div class="description">
+                        <h3>Tech Stack</h3>
+                        <p>React, Node.js, Express, Knex, Postrgres, & Apex Charts.</p>
+                        <a class="project-links" target="_blank" href="https://spiral-ebon.vercel.app/">Live App</a>
+                        <br>
+                        <br>
+                        <a class="project-links" target="_blank" href="https://github.com/LouieSankey/Spiral-React">GitHub Client</a>
+                        <br>
+                        <br>
+                        <a class="project-links" target="_blank" href="https://github.com/LouieSankey/Spiral_Server">GitHub Server</a>
+                    </div>
                 </li>
+                <br>
+                <br>
+
 
                 <li class='item'>
-                    <img src="./img/gattaca_quiz2.png" class="portfolio-image" alt="Darkhorse - Fantasy Sports App Screenshot">
-                    <h3>Gattaca Science Quiz</h3>
-                    <p>You probably didn't know that NASA scientists voted Gattaca the most accurate science fiction movie of all time. Test your sciene knowledge with six questions about the move.</p>
+                    <div class="li-header">
+                        <img id="quik-logo" src="./img/quik-logo-10.png" alt="">
+                    </div>
+                    <img src="./img/quik-1.png" class="portfolio-image quik-image" alt="Spiral Screenshots ">
+                    <h3>Quik - Dating, Meetup.</h3>
+                    <p>
+                        Quik is different from other dating apps in that it isn't designed for you to swipe endlessly, and rarely if ever meet with a person in real life.</p>
+                    <p>Just the opposite, with Quik you pin locations you're already interested in going to and then start to look for potential matches from there. </p>
+                    <p>To add to the mystery (and also provide a layer of security), you won't know the exact location you matched with anyone until you mutually agree to reveal it. </p>
                 </li>
+
 
                 <li class='item'>
-                    <img src="./img/fridge_side.png" class="portfolio-image" alt="Darkhorse - Fantasy Sports App Screenshot">
-                    <h3>Fridge-Side</h3>
-                    <p>Fridge gives you popular recipes based on ingredients that you already have in your home.</p>
+                    <div class="li-header">
+                    </div>
+                    <img src="./img/quik-chat-2.png" class="portfolio-image" alt="Darkhorse - Fantasy Sports App Screenshot">
+                    <h3>Tech Stack</h3>
+                    <p>React, Node.js, Express, Socket.io, Knex, Postgres, Leaflet Maps API & The Foursquare API. </p>
+                    <a class="project-links" target="_blank" href="https://quik.vercel.app/">Live App</a>
+                    <br>
+                    <br>
+                    <a class="project-links" target="_blank" href="https://github.com/LouieSankey/quik_dating">GitHub Client</a>
+                    <br>
+                    <br>
+                    <a class="project-links" target="_blank" href="https://github.com/LouieSankey/quik_server">GitHub Server</a>
                 </li>
-
-
-
-
             </ul>
         </section>
 
-
-
         <hr>
+        <!-- Mobile App -->
+        <section class="wrapper">
+            <h2 id="portfolio">Mobile Apps</h2>
+            <h3 id="portfolio">Native iOS/Firebase</h3>
+            <li class='item'>
+                <div class="li-header">
+                    <img id="quik-logo" src="./img/darkhorse-app-icon.png" alt="">
+                </div>
+                <img src="./img/darkhorse.png" class="portfolio-image" alt="Darkhorse - Fantasy Sports App Screenshot">
+                <h3>Darkhorse - Daily Fantasy Sports</h3>
+                <p>Darkhorse is for the sports fan who also likes strategy games, but thinks that knowing every detail about every player is a bit too time consuming.</p>
+                <p>With darkhorse you draft a single player then use your remaining salary cap to buy additional game stats. </p>
+                <p>If you choose an underrated 'dark horse' player, you'll keep more funds for stat buying.</p>
+                <p>Spend wisely and you'll help your player hit key achievements that boost his score above the competition.
+                </p>
+                <h3>Testing Note</h3>
+                <p>Darkhorse is available for iPhone through TestFlight, which is Apple's beta testing software.</p>
+                <p>To install TestFlight on an iPhone, follow the 'iOS Install' link below. Once installed, open TestFlight (or return to the download link again) to install Darkhorse.</p>
+                <p>The full XCode/Swift repo has been kept private, but I've included the full code for Android v.1 (pictured below), as well as a sample of the Node.js web scraper that works with GCP and Firebase to power the backend. </p>
+                <h3>Tech Stack</h3>
+                <p>XCode, Swift, Google Cloud Platform, Firebase, Node.js</p>
+                <h3>Links</h3>
+                <a class="portfolio-link" target="_blank" href="https://testflight.apple.com/join/VvpAAjmW">iOS Install</a>
+                <br>
+                <br>
+                <a class="portfolio-link" target="_blank" href="https://github.com/LouieSankey/Darkhorse_V3_NodeJS" target="blank">Node.js Backend (Sample)</a></p>
+            </li>
 
+            <br>
+            <br>
 
+            <h3 id="portfolio">Android v.1</h3>
+            <li class='item'>
+                <img src="./img/android_white_v2.png" class="portfolio-image" alt="Darkhorse - Fantasy Sports App Screenshot">
+                <h3>Darkhorse v.1 (Prototype)</h3>
+                <p>This is a Darkhorse prototype I built for Android with Java when I was first learning to code. You can open it and play around in Android Studio.</p>
+                <a class="portfolio-link" target="_blank" href="https://github.com/LouieSankey/Darkhorse_V2_Android" target="blank">Repo</a>
+            </li>
+        </section>
+        <br>
+        <br>
+        <hr>
+        <section class="wrapper">
+            <h2 id="portfolio">JQuery/HTML/CSS</h2>
+            <ul id="portfolio-list">
+                <li class='item'>
+                    <h3>Fridge-Side</h3>
+                    <img src="./img/fridge_side.png" class="portfolio-image" alt="Darkhorse - Fantasy Sports App Screenshot">
+                    <h3>Fridge-Side</h3>
+                    <p>Fridge-Side answers the question, what meals can I make with ingredients I already have in my home? It then lets you save missing ingredients to a shopping list for reference.</p>
+                    <p>To make it more memorable, I styled it like notes stuck on the side of a refrigerator. </p>
+                    <h3>Tech Stack</h3>
+                    <p>HTML, CSS, JQuery, and the Spoonacular API</p>
+                    <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/fridge_side/">Live App</a>
+                    <br>
+                    <br>
+                    <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/fridge_side">Repo</a>
+                </li>
+                <br>
+                <br>
+                <li class='item'>
+                    <h3>Gattaca Science Quiz</h3>
+                    <img src="./img/gattaca_quiz2.png" class="portfolio-image no-border" alt="Darkhorse - Fantasy Sports App Screenshot">
+                    <h3>Gattaca Science Quiz</h3>
+                    <p>A small homage to one of my favorite movies -- Gattaca. Test your science knowledge with 6 questions based on true science in the movie.</p>
+                    <h3>Tech Stack</h3>
+                    <p>HTML, CSS, JQuery</p>
+                    <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/quiz_app/">Live App</a>
+                    <br>
+                    <br>
+                    <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/quiz_app">Repo</a>
+
+                </li>
+
+            </ul>
+        </section>
+        <hr>
 
         <!-- Message Me -->
         <section id="message-me-section">
-
-            <h2 id="contact">Message Me</h2>
-
-            <form action="https://formspree.io/lmsankey415@gmail.com" method="POST">
+            <h2 id="contact ">Email Me</h2>
+            <form action="https://formspree.io/f/xyybvypg" method="POST">
+                <label class="form-label">Your Name:
+                <input type="text " name="name">
+            </label>
+                <label class="form-label"> Your Email:
+                <input type="email " name="_replyto">
+            </label>
                 <label class="form-label">
-            Your Name:
-            <input type="text" name="name">
-          </label>
-                <labelclass="form-label">
-                    Your Email:
-                    <input type="email" name="_replyto">
-                    </label>
-                    <labelclass="form-label">
                         Message:
-                        <textarea name="message"></textarea>
                         </label>
-                        <input type="submit" value="Send">
+                <textarea name="message"></textarea>
+                <button type="submit">Send</button>
             </form>
 
         </section>
-
         <hr>
-        <!-- Contact -->
-        <section id="contact-section">
-
-            <h2 id="contact">Contact</h2>
-            <ol>
-                <li>
-                    <a href="https://www.linkedin.com/in/louissankey/" target="_blank">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/louiesankey" target="_blank">GitHub</a>
-                </li>
-                <li>
-                    <a href="mailto:lmsankey415@gmail.com" target="_blank">Email</a>
-                </li>
-            </ol>
-        </section>
-
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="wrapper">
-            <p>Copyright Louie Sankey.</p>
+        <div class="wrapper ">
+            <p>Copyright 2021 - All Rights Reserved</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js "></script>
 </body>
 
 </html>
