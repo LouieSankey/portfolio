@@ -16,14 +16,6 @@
     }
     /* styles the links using pseudo-classes */
     
-    .scroll-link {
-        color: #e6c58a;
-    }
-    
-    .scroll-link:hover {
-        color: #e4ca9e;
-    }
-    
     a:link {
         color: #56738d;
     }
@@ -208,6 +200,14 @@
     .insights-label {
         margin-left: -4px;
         margin-top: 38px;
+    }
+    
+    .scroll-link {
+        color: #e6c58a;
+    }
+    
+    .scroll-link:hover {
+        color: #e4ca9e;
     }
     
     @media all and (min-width: 900px) {
