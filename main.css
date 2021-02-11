@@ -1,223 +1,388 @@
-    /* provides global styling*/
-    
-    html {
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 20px;
-    }
-    /* adds padding to all horizontal lines */
-    
-    hr {
-        margin-top: 30px;
-    }
-    
-    header nav ul li a:link {
-        color: #27537A;
-        padding: 5px 15px 5px 15px;
-    }
-    /* styles the links using pseudo-classes */
-    
-    a:link {
-        color: #56738d;
-    }
-    
-    a:hover {
-        color: #27537A;
-    }
-    /* links for the portfolio section */
-    
-    a.portfolio-link:link {
-        color: #27537A;
-    }
-    
-    a.project-links {
-        color: #27537A;
-    }
-    
-    a.portfolio-link:visited {
-        color: #27537A;
-    }
-    
-    a.portfolio-link:hover {
-        color: #27537A;
-    }
-    /* provides a class for centering any text fields */
-    
-    .center-text {
-        text-align: center;
-    }
-    /* styles the title text */
-    
-    #title-text {
-        font-size: 30px;
-        text-align: center;
-    }
-    /* centers and styles the main profile photo */
-    
+#menu {
+    background: black;
+    width: 100%
+}
+
+
+/* provides global styling*/
+
+h2 {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 60px;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+
+/* adds padding to all horizontal lines */
+
+hr {
+    margin-top: 30px;
+}
+
+nav ul li a:link {
+    color: #27537A;
+    padding: 5px 15px 5px 15px;
+}
+
+
+/* styles the links using pseudo-classes */
+
+a:link {
+    color: #56738d;
+}
+
+a:hover {
+    color: #27537A;
+}
+
+
+/* links for the portfolio section */
+
+a.portfolio-link:link {
+    color: #27537A;
+}
+
+a.project-links {
+    color: #27537A;
+}
+
+a.portfolio-link:visited {
+    color: #27537A;
+}
+
+a.portfolio-link:hover {
+    color: #27537A;
+}
+
+
+/* provides a class for centering any text fields */
+
+.center-text {
+    text-align: center;
+}
+
+
+/* styles the title text */
+
+#title-text {
+    margin: 10px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    width: 300px;
+}
+
+#fridge-logo {
+    margin-top: -10px;
+    width: 120px;
+}
+
+.black-background {
+    background: lightgray;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.sub-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+
+/* centers and styles the main profile photo */
+
+#profile-photo {
+    height: 270px;
+    margin-top: 40p;
+    display: block;
+    margin-bottom: 20px;
+    /* float: left; */
+    /* margin-right: 40px; */
+    margin: auto;
+    margin-top: 0px;
+    border: solid;
+    background: white;
+    margin-top: 0px;
+    border-radius: 50%;
+}
+
+.no-border {
+    border: none;
+}
+
+.social-icon {
+    width: 50px;
+}
+
+
+/* styles the image behind the profile photo */
+
+#photo-background {
+    /* background-image: url('./img/man.jpg'); */
+    background-size: cover;
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+/* styles the special divider with scoll and email options */
+
+#scroll-bar {
+    margin-top: 40px;
+    border-radius: 10px;
+    clear: both;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 4px;
+}
+
+
+/* styles the contact section */
+
+#contact-section {
+    background: black;
+    color: white;
+    padding-top: 2px;
+    ;
+    padding-bottom: 2px;
+}
+
+
+/* provides css for responsive layout items in the portfolio */
+
+.portfolio-list {
+    margin-bottom: 100px;
+    list-style: none;
+    padding-left: 0;
+    flex-direction: column;
+}
+
+.headline {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.sub-headline {
+    margin-left: 10px;
+}
+
+.item {
+    flex: 1 50%;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.portfolio-image {
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(114, 114, 114);
+}
+
+.description {}
+
+
+/* navigation code */
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a:visited {
+    color: #27537A;
+}
+
+nav ul li a:hover {
+    color: #5b758b;
+}
+
+
+/* form code */
+
+.form-label {
+    color: black;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: gray;
+    font-family: arial;
+}
+
+form textarea {
+    height: 4.75rem;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+}
+
+.li- {
+    height: 80px;
+}
+
+#spiral-logo {
+    width: 140px;
+}
+
+#spiral-logo-small {
+    width: 60px;
+    margin-top: 36px;
+    float: left;
+    margin-right: -4px;
+}
+
+.quik-logo {
+    width: 80px;
+}
+
+.insights-label {
+    margin-left: -4px;
+    margin-top: 38px;
+}
+
+.scroll-link {
+    color: #e6c58a;
+}
+
+.scroll-link:hover {
+    color: #e4ca9e;
+}
+
+.outer {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    /* added */
+}
+
+.grid-row {
+    display: flex;
+    flex: 1;
+    /* added */
+}
+
+.grid-item {
+    flex: 1;
+    ;
+    /* added */
+}
+
+.grid-image {
+    width: 100%;
+}
+
+
+/* @media (max-width:400px) {
+        .grid-item {
+            flex-basis: 100%;
+        }
+        .grid-item:nth-of-type(2) {
+            order: -1;
+        }
+    } */
+
+.social-icons {
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.header {
+    margin: auto;
+    width: fit-content;
+}
+
+.social-icons-display {
+    width: fit-content;
+    margin: auto;
+}
+
+.headline-container {
+    min-width: 100px;
+    display: inline-block;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+
+.wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+@media all and (min-width: 600px) {}
+
+@media all and (min-width: 800px) {
     #profile-photo {
-        height: 270px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
+        margin-top: -60px;
+        margin-right: 0px;
+        float: left;
+        margin-right: 10px;
     }
-    
-    .no-border {
-        border: none;
-    }
-    /* styles the image behind the profile photo */
-    
-    #photo-background {
-        /* background-image: url('./img/man.jpg'); */
-        background-size: cover;
-        border-radius: 15px;
-    }
-    /* styles the special divider with scoll and email options */
-    
-    #scroll-bar {
-        background-color: rgb(0, 0, 0);
-        color: white;
-        padding: 4px;
-    }
-    /* styles the contact section */
-    
-    #contact-section {
-        background: black;
-        color: white;
-        padding-top: 2px;
-        ;
-        padding-bottom: 2px;
-    }
-    /* provides css for responsive layout items in the portfolio */
-    
-    .portfolio-list {
-        margin-bottom: 100px;
-        list-style: none;
-        padding-left: 0;
-        flex-direction: column;
-    }
-    
     .headline {
-        margin-top: 0px;
+        margin-top: 100px;
+        margin-bottom: 20px;
     }
-    
-    .item {
-        flex: 1 50%;
-        padding: 0px;
-        box-sizing: border-box;
-        list-style: none;
+    #photo-background {
+        margin: unset;
+        width: unset;
     }
-    
-    .wrapper {
+    .headline-container {
+        min-width: 100px;
+        display: inline;
+    }
+    .social-icons {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        float: right;
+        height: 60px;
+    }
+    .header {
         width: 95%;
         margin: auto;
     }
-    
-    .portfolio-image {
-        width: 100%;
-        border-style: solid;
-        border-width: 2px;
-        border-color: rgb(114, 114, 114);
+    #title-text {
+        text-align: left;
+        width: 600px
     }
-    
-    .description {
-        height: 360px;
-    }
-    /* navigation code */
-    
-    header nav {
-        display: flex;
-        justify-content: center;
-    }
-    
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-bottom: 0;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    
-    header nav ul li {
-        list-style-type: none;
-    }
-    
-    header nav ul li a:visited {
-        color: #27537A;
-    }
-    
-    header nav ul li a:hover {
-        color: #5b758b;
-    }
-    /* form code */
-    
-    .form-label {
-        color: black;
-    }
-    
-    form label {
-        display: block;
-        font-size: 18px;
-        margin-bottom: 5px;
-        color: gray;
-        font-family: arial;
-    }
-    
-    form textarea {
-        height: 4.75rem;
-        width: 100%;
-        color: #000;
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-    
-    form input {
-        width: 100%;
-        color: #000;
-        font-size: 16px;
-    }
-    
-    .li-header {
-        height: 80px;
-    }
-    
-    #spiral-logo {
-        width: 140px;
-    }
-    
-    #spiral-logo-small {
-        width: 60px;
-        margin-top: 36px;
-        float: left;
-        margin-right: -4px;
-    }
-    
-    .quik-logo {
-        width: 80px;
-    }
-    
-    .insights-label {
-        margin-left: -4px;
-        margin-top: 38px;
-    }
-    
-    .scroll-link {
-        color: #e6c58a;
-    }
-    
-    .scroll-link:hover {
-        color: #e4ca9e;
-    }
-    
-    @media all and (min-width: 900px) {
-        .description {
+    /* .description {
             height: 340px;
         }
-        .wrapper {
-            width: 95%;
-            margin: auto;
-        }
+  
         .portfolio-list {
             flex-direction: row;
             display: flex;
@@ -236,16 +401,13 @@
             width: 30%;
         }
         /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
-    
-    @media all and (min-width: 830px) {
-        header nav ul li a:link {
-            color: #27537A;
-            margin: 30px;
-        }
+    nav ul li a:link {
+        color: #27537A;
+        margin: 30px;
     }
+}

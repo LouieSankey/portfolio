@@ -12,42 +12,59 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Heading -->
     <header>
-        <section class="wrapper">
-            <h1 id="title-text" class="center-  text">Louis Sankey - Software Developer</h1>
-            <p class="center-text">(with design skills)</p>
-            <nav>
-                <ul id="menu">
-                    <li><a href="https://louiesankey.github.io/portfolio/">Home</a></li>
+        <section class="header">
+            <h1 id="title-text" class="center-  text">Louis Sankey <span class="sub-title">Designer, Full-Stack Developer.</span></h1>
 
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a target="blank" href="https://github.com/louiesankey">GitHub</a></li>
-                    <li><a target="blank" href="mailto:lmsankey@ucdavis.edu">Email</a></li>
-                    <li><a target="blank" href="https://www.linkedin.com/in/louissankey/">LinkedIn</a></li>
-                </ul>
-            </nav>
+            <div class="social-icons-display">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/louissankey/" target="blank">
+                        <img class="social-icon" src="./img/social-linkedin.png" alt=""></a>
+                    <a href="https://github.com/louiesankey" target="blank">
+                        <img class="social-icon" src="./img/social-github.png" alt=""></a>
+
+                    <a href="https://stackoverflow.com/users/3692615/louie-sankey?tab=profile" target="blank">
+                        <img class="social-icon" src="./img/social-stackoverflow.png" alt=""></a>
+
+                    <a href="mailto:lmsankey@ucdavis.edu" target="blank">
+                        <img class="social-icon" src="./img/social-mail.png" alt=""></a>
+
+                </div>
+
+            </div>
+
+
         </section>
     </header>
 
     <!-- Main -->
     <main class="wrapper">
-        <div id="photo-background">
-            <img id="profile-photo" src="./img/Louie.jpg" alt="Louis Sankey - Profile Photo">
-        </div>
 
         <!-- Introduction -->
-        <section>
-            <h2 class="headline">Hi there,</h2>
-            <p>My name is Louis Sankey, and I am a software developer living in San Francisco, Ca.</p>
-            <p id="scroll-bar" class="center-text"><a class="scroll-link" href="#portfolio">Scroll Down</a> to check out my portfolio or <a class="scroll-link" target="_blank" href="mailto:lmsankey415@gmail.com">Contact Me!</a></p>
+        <section class="black-background">
+            <div id="photo-background">
+                <img id="profile-photo" src="./img/prof-pic.png" alt="Louis Sankey - Profile Photo">
+            </div>
+            <div class="headline-container">
+                <h2 class="headline">Hello</h2>
+                <p class="sub-headline">I'm Louis, a full-stack developer with a background in art, creative writing, and philosophy.</p>
+            </div>
         </section>
+
+        <br>
+
+        <hr>
 
         <!-- About -->
         <section>
+
             <h2 id="about">About Me</h2>
             <p>As a degree holder in philosophy, some of my unique perspectives on programming include:</p>
             <ul>
@@ -56,8 +73,7 @@
                 <li>And that the un-examined program is almost certainly not worth compiling.</li>
             </ul>
             <p>I'm a creative and collaborative person by nature and believe personal achievements are usually team achievements in disguise.</p>
-            <p>And to that end -- I'm currently looking to join a new a development team where I can be that 'perfect fit'.</p>
-
+            <p>And to that end -- I'm currently looking to join a new a team where I can be that 'perfect fit'.</p>
             <p>In addition to developing software, I enjoy traveling and living a part-time digital nomad lifestyle.</p>
             <p>Mahalo!</p>
         </section>
@@ -73,173 +89,186 @@
                 <li>Frontend Web Development</li>
                 <li>Backend Development with Node.js</li>
             </ul>
-
         </section>
 
         <hr>
 
         <!-- Portfolio -->
 
-        <h2 id="portfolio">My Projects</h2>
-        <h3>React/Node.js Apps</h3>
+        <h2>My Projects</h2>
+
         <section>
-            <ul class="portfolio-list">
-                <li class='item'>
-                    <div class="li-header">
-                        <img class="quik-logo" src="./img/spiral-icon.png" alt="Spiral app icon">
-                    </div>
-                    <img src="./img/spiral-front2.png " class="portfolio-image " alt="Spiral app homepage">
-                    <div class="description">
-                        <h3>Spiral - Mindfulness, Productivity.</h3>
-                        <p>Spiral provides a framework for breaking down your daily work tasks into managable timeframes.
-                        </p>
-                        <p>Challenge yourself to stay focused and work faster on a task, and let Spiral reward you with a break period when you're finished.</p>
-                        <p>Use Spiral for all your work tasks to take advantage of inbuilt time tracking and productivity insights.</p>
-                    </div>
-                </li>
 
-                <li class='item'>
-                    <div class="li-header">
+            <div class="li-header">
+                <img class="quik-logo" src="./img/spiral-icon.png" alt="Spiral app icon">
+            </div>
+            <h3>Spiral - Mindfulness, Productivity.</h3>
+            <p>Spiral provides a framework for breaking down your daily work tasks into manageable timeframes.
+            </p>
+            <p>Challenge yourself to stay focused and work faster on a task, and let Spiral reward you with a break period when you're finished.</p>
+            <p>Use Spiral for all your work tasks to take advantage of inbuilt time tracking and productivity insights.</p>
+            <img src="./img/spiral-mock1.png " class="portfolio-image " alt="Spiral app homepage">
+            <div class="description">
 
-                    </div>
-                    <img src="./img/insights_ui_2.png " class="portfolio-image " alt="Spiral app insights">
-                    <div class=""></div>
-                    <div class="description">
+                <h3>Tech Stack</h3>
+                <p>React, Node.js, Express, Knex, Postrgres, AG-Grid, & Apex Charts.</p>
+                <a class="project-links" target="_blank" href="https://spiral-ebon.vercel.app/">Live App</a>
+                <br>
+                <br>
+                <a target="_blank" href="https://www.loom.com/share/51913383500142f4a1b02bc9e491e6db">Video</a>
+                <br>
+                <br>
+                <a class="project-links" target="_blank" href="https://github.com/LouieSankey/Spiral-React">GitHub Client</a>
+                <br>
+                <br>
+                <a class="project-links" target="_blank" href="https://github.com/LouieSankey/Spiral_Server">GitHub Server</a>
 
-                        <h3>Tech Stack</h3>
-                        <p>React, Node.js, Express, Knex, Postrgres, & Apex Charts.</p>
-                        <a class="project-links" target="_blank" href="https://spiral-ebon.vercel.app/">Live App</a>
-                        <br>
-                        <br>
-                        <a target="_blank" href="https://www.loom.com/share/51913383500142f4a1b02bc9e491e6db">Video</a>
-                        <br>
-                        <br>
-                        <a class="project-links" target="_blank" href="https://github.com/LouieSankey/Spiral-React">GitHub Client</a>
-                        <br>
-                        <br>
-                        <a class="project-links" target="_blank" href="https://github.com/LouieSankey/Spiral_Server">GitHub Server</a>
-                    </div>
-                    <br>
-                    <br>
-                </li>
+            </div>
+            <hr>
 
+            <br>
+            <div class="li-header">
+                <img class="quik-logo" src="./img/quik-logo-10.png" alt="Quik app logo">
+            </div>
+            <h3>Quik - Dating, Meetup.</h3>
+            <p>
+                Quik is different from other dating apps in that it isn't designed for you to swipe endlessly, and rarely if ever meet with a person in real life.</p>
+            <p>Just the opposite, with Quik you pin locations you're already interested in going to and then start to look for potential matches from there. </p>
+            <p>To add to the mystery (and also provide a layer of security), you won't know the exact location you matched with anyone until you mutually agree to reveal it. </p>
+            <img src="./img/quik-background.png" class="portfolio-image quik-image" alt="Quik app home">
 
-
-                <li class='item'>
-                    <div class="li-header">
-                        <img class="quik-logo" src="./img/quik-logo-10.png" alt="Quik app logo">
-                    </div>
-                    <img src="./img/quik-1.png" class="portfolio-image quik-image" alt="Quik app home">
-                    <h3>Quik - Dating, Meetup.</h3>
-                    <p>
-                        Quik is different from other dating apps in that it isn't designed for you to swipe endlessly, and rarely if ever meet with a person in real life.</p>
-                    <p>Just the opposite, with Quik you pin locations you're already interested in going to and then start to look for potential matches from there. </p>
-                    <p>To add to the mystery (and also provide a layer of security), you won't know the exact location you matched with anyone until you mutually agree to reveal it. </p>
-                </li>
+            <h3>Tech Stack</h3>
+            <p>React, Node.js, Express, Socket.io, Knex, Postgres, Leaflet Maps API & The Foursquare API. </p>
+            <a class="project-links" target="_blank" href="https://quik.vercel.app/">Live App</a>
+            <br>
+            <br>
+            <a class="project-links" target="_blank" href="https://github.com/LouieSankey/quik_dating">GitHub Client</a>
+            <br>
+            <br>
+            <a class="project-links" target="_blank" href="https://github.com/LouieSankey/quik_server">GitHub Server</a>
 
 
-                <li class='item'>
-                    <div class="li-header">
-                    </div>
-                    <img src="./img/quik-chat-2.png" class="portfolio-image" alt="Quik app chat">
-                    <h3>Tech Stack</h3>
-                    <p>React, Node.js, Express, Socket.io, Knex, Postgres, Leaflet Maps API & The Foursquare API. </p>
-                    <a class="project-links" target="_blank" href="https://quik.vercel.app/">Live App</a>
-                    <br>
-                    <br>
-                    <a class="project-links" target="_blank" href="https://github.com/LouieSankey/quik_dating">GitHub Client</a>
-                    <br>
-                    <br>
-                    <a class="project-links" target="_blank" href="https://github.com/LouieSankey/quik_server">GitHub Server</a>
-                </li>
-            </ul>
         </section>
 
         <hr>
         <!-- Mobile App -->
         <section class="wrapper">
             <h2>Mobile Apps</h2>
-            <h3>Native iOS/Firebase</h3>
             <div class='item'>
                 <div class="li-header">
                     <img class="quik-logo" src="./img/darkhorse-app-icon.png" alt="Darkhors app icon">
                 </div>
-                <img src="./img/darkhorse.png" class="portfolio-image" alt="Darkhorse app screenshot">
                 <h3>Darkhorse - Daily Fantasy Sports</h3>
                 <p>Darkhorse is for the sports fan who also likes strategy games, but thinks that knowing every detail about every player is a bit too time consuming.</p>
                 <p>With darkhorse you draft a single player then use your remaining salary cap to buy additional game stats. </p>
                 <p>If you choose an underrated 'dark horse' player, you'll keep more funds for stat buying.</p>
                 <p>Spend wisely and you'll help your player hit key achievements that boost his score above the competition.
                 </p>
+
+                <img src="./img/darkhorsescreenshots.png" class="portfolio-image" alt="Darkhorse app screenshot">
+                <h3>Tech Stack</h3>
+                <p>Xcode, Swift, Google Cloud Platform, Firebase, Node.js, and Cheerio (for web scraping)</p>
+                <p>Android Studio, Java</p>
                 <h3>Testing Note</h3>
                 <p>Darkhorse is available for iPhone through TestFlight, which is Apple's beta testing software.</p>
                 <p>To install TestFlight on an iPhone, follow the 'iOS Install' link below. Once installed, open TestFlight (or return to the download link again) to install Darkhorse.</p>
-                <p>The full Xcode/Swift repo has been kept private, but I've included the full code for Android v.1 (pictured below), as well as a sample of the Node.js web scraper that works with GCP and Firebase to power the backend. </p>
-                <h3>Tech Stack</h3>
-                <p>Xcode, Swift, Google Cloud Platform, Firebase, Node.js</p>
+                <p>The full Xcode/Swift repo has been kept private, but I've included the full code for a working Android prototype, as well as a sample of the Node.js web scraper that works with GCP and Firebase to power the backend. </p>
+
                 <h3>Links</h3>
                 <a class="portfolio-link" target="_blank" href="https://testflight.apple.com/join/VvpAAjmW">iOS Install</a>
                 <br>
                 <br>
-                <a class="portfolio-link" target="_blank" href="https://github.com/LouieSankey/Darkhorse_V3_NodeJS">Node.js Backend (Sample)</a>
+                <a class="portfolio-link" target="_blank" href="https://github.com/LouieSankey/Darkhorse_V3_NodeJS">Node.js Backend </a>
+                <br>
+                <br>
+                <a href="https://github.com/LouieSankey/Darkhorse_V2_Android">Android/Java Repo </a>
+
             </div>
 
             <br>
             <br>
 
-            <h3>Android v.1</h3>
+            <!-- <h3>Android v.1</h3>
             <div class='item'>
                 <img src="./img/android_white_v2.png" class="portfolio-image" alt="Darkhorse Android screenshot">
                 <h3>Darkhorse v.1 (Prototype)</h3>
                 <p>This is a Darkhorse prototype I built for Android with Java when I was first learning to code. You can open it and play around in Android Studio.</p>
                 <a class="portfolio-link" target="_blank" href="https://github.com/LouieSankey/Darkhorse_V2_Android">Repo</a>
-            </div>
+            </div> -->
+
+            <!-- 
+                <div class="outer">
+                    <div class="grid-row">
+                        <div class="grid-item">
+                            <img class="grid-image" src="./img/NBA1.png" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <img class="grid-image" src="./img/NBA2.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-item">
+                            <img class="grid-image" src="./img/NBA3.png" alt="">
+
+                        </div>
+
+                        <div class="grid-item">
+                            <img class="grid-image" src="./img/NBA4.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-item">
+                            <img class="grid-image" src="./img/NBA5.png" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <img class="grid-image" src="./img/NBA7.png" alt="">
+                        </div>
+                    </div>
+                </div> -->
         </section>
         <br>
         <br>
         <hr>
         <section class="wrapper">
             <h2>jQuery Apps</h2>
-            <ul class="portfolio-list">
-                <li class='item'>
-                    <h3>Fridge-Side</h3>
-                    <img src="./img/fridge_side.png" class="portfolio-image" alt="Fridge-side screenshot">
-                    <h3>Fridge-Side</h3>
-                    <p>Fridge-Side answers the question, what meals can I make with ingredients I already have in my home? It then lets you save missing ingredients to a shopping list for reference.</p>
-                    <p>To make it more memorable, I styled it like notes stuck on the side of a refrigerator. </p>
-                    <h3>Tech Stack</h3>
-                    <p>HTML, CSS, jQuery, and the Spoonacular API</p>
-                    <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/fridge_side/">Live App</a>
-                    <br>
-                    <br>
-                    <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/fridge_side">Repo</a>
-                    <br>
-                    <br>
-                </li>
 
-                <li class='item'>
-                    <h3>Gattaca Science Quiz</h3>
-                    <img src="./img/gattaca_quiz2.png" class="portfolio-image no-border" alt="Gattaca Quiz screenshot">
-                    <h3>Gattaca Science Quiz</h3>
-                    <p>A small homage to one of my favorite movies -- Gattaca. Test your science knowledge with 6 questions based on true science in the movie.</p>
-                    <h3>Tech Stack</h3>
-                    <p>HTML, CSS, jQuery</p>
-                    <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/quiz_app/">Live App</a>
-                    <br>
-                    <br>
-                    <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/quiz_app">Repo</a>
+            <img id="fridge-logo" src="./img/fridge-side-font.png" alt="">
 
-                </li>
+            <img src="./img/fridge_side.png" class="portfolio-image" alt="Fridge-side screenshot">
+            <h3>Fridge-Side</h3>
+            <p>Fridge-Side answers two questions: What's the least amount of shopping I need to do to make a viable meal? And how can I use up multiple soon to parish ingredients efficiently?</p>
+            <p>After finding recepies, it then lets you save missing ingredients to a shopping list for reference.</p>
+            <h3>Tech Stack</h3>
+            <p>HTML, CSS, jQuery, and the Spoonacular API</p>
+            <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/fridge_side/">Live App</a>
+            <br>
+            <br>
+            <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/fridge_side">Repo</a>
+            <br>
+            <br>
 
-            </ul>
+            <h3>Gattaca Science - Quiz</h3>
+            <img src="./img/gattaca_quiz2.png" class="portfolio-image no-border" alt="Gattaca Quiz screenshot">
+            <h3>Gattaca Science - Quiz</h3>
+            <p>A small homage to one of my favorite movies -- Gattaca. Test your science knowledge with 6 questions based on true science in the movie.</p>
+            <h3>Tech Stack</h3>
+            <p>HTML, CSS, jQuery</p>
+            <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/quiz_app/">Live App</a>
+            <br>
+            <br>
+            <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/quiz_app">Repo</a>
+
+
         </section>
         <hr>
 
 
-        <p>Thanks for checking out my portfolio. If you like my work feel free to email me. </p>
+        <!-- <p>Thanks for checking out my portfolio. If you like my work feel free to email me. </p> -->
 
         <!-- Message Me -->
-        <section id="message-me-section">
+        <!-- <section id="message-me-section">
             <h2 id="contact">Email Me</h2>
             <form action="https://formspree.io/f/xyybvypg" method="POST">
                 <label class="form-label">Your Name:
@@ -255,7 +284,7 @@
                 <button type="submit">Send</button>
             </form>
 
-        </section>
+        </section> -->
         <hr>
 
     </main>
