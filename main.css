@@ -3,9 +3,6 @@
     width: 100%
 }
 
-
-/* provides global styling*/
-
 h2 {
     font-family: 'Reenie Beanie', sans-serif;
     font-size: 60px;
@@ -186,8 +183,6 @@ a.portfolio-link:hover {
     border-color: rgb(114, 114, 114);
 }
 
-.description {}
-
 
 /* navigation code */
 
@@ -315,16 +310,6 @@ form input {
     display: table;
     clear: both;
 }
-
-
-/* @media (max-width:400px) {
-        .grid-item {
-            flex-basis: 100%;
-        }
-        .grid-item:nth-of-type(2) {
-            order: -1;
-        }
-    } */
 
 .social-icons {
     position: relative;
