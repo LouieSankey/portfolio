@@ -341,6 +341,11 @@ form input {
     margin: auto;
 }
 
+.about-me {
+    background-image: url('./img/watch.jpeg');
+    background-size: cover;
+}
+
 @media all and (min-width: 800px) {
     #profile-photo {
         margin-top: -60px;
