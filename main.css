@@ -261,6 +261,11 @@ form input {
     width: 80px;
 }
 
+.algo-logo {
+    width: 80px;
+    border-radius: 15px;
+}
+
 .insights-label {
     margin-left: -4px;
     margin-top: 38px;
