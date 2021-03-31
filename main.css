@@ -9,7 +9,7 @@ h2 {
 }
 
 html {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
 
@@ -160,6 +160,7 @@ a.portfolio-link:hover {
 
 .headline {
     margin-top: 0px;
+    padding-top: 10px;
     margin-bottom: 20px;
     margin-left: 10px;
 }
@@ -349,6 +350,14 @@ form input {
 .about-me {
     background-image: url('./img/watch.jpeg');
     background-size: cover;
+}
+
+.tech-stack {
+    color: rgb(58, 58, 58);
+}
+
+.footer {
+    text-align: center;
 }
 
 @media all and (min-width: 800px) {
