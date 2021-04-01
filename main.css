@@ -3,9 +3,14 @@
     width: 100%
 }
 
+h3 {
+    font-size: 40px;
+    font-family: 'New Tegomin', serif;
+}
+
 h2 {
-    font-family: 'Reenie Beanie', sans-serif;
-    font-size: 60px;
+    font-family: 'New Tegomin', serif;
+    font-size: 40px;
 }
 
 html {
