@@ -1,6 +1,7 @@
 .dh-image {
     width: 380px;
     height: 380px;
+    pointer-events: none;
 }
 
 
