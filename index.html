@@ -18,6 +18,16 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0MB2S1QJ1"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="./jquery.film_roll.js"></script>
+    <script>
+        $(function() {
+            fr = new FilmRoll({
+                container: '#film_roll',
+                height: 330,
+                scroll: false
+            });
+        });
+    </script>
 
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -120,104 +130,28 @@
                 <p>If you choose an underrated 'dark horse' player, you'll keep more funds for stat buying.</p>
                 <p>Spend wisely and you'll help your player hit key achievements that boost his score above the competition.
                 </p>
-
-                <div class="carousel-outer-div">
-
-                    <div class="card-carousel">
-
-                        <div class="my-card"><img class="img" src="./img/NBA1.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA2.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA3.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA4.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA5.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA8.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA1.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA2.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA3.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA4.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA5.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA8.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA1.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA2.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA3.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA4.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA5.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA8.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA1.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA2.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA3.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA4.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA5.png" alt=""></div>
-                        <div class="my-card"><img class="img" src="./img/NBA8.png" alt=""></div>
-
-
+                <div id="film_roll">
+                    <div>
+                        <a href="..."><img class="dh-image" src="./img/NBA1.png"> </a>
+                    </div>
+                    <div>
+                        <a href="..."><img class="dh-image" src="./img/NBA2.png"> </a>
+                    </div>
+                    <div>
+                        <a href="..."><img class="dh-image" src="./img/NBA3.png"> </a>
+                    </div>
+                    <div>
+                        <a href="..."><img class="dh-image" src="./img/NBA4.png"> </a>
+                    </div>
+                    <div>
+                        <a href="..."><img class="dh-image" src="./img/NBA5.png"> </a>
+                    </div>
+                    <div>
+                        <a href="..."><img class="dh-image" src="./img/NBA7.png"> </a>
                     </div>
 
-
-                    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-                    <script>
-                        $num = $('.my-card').length;
-                        $even = $num / 2;
-                        $odd = ($num + 1) / 2;
-
-                        if ($num % 2 == 0) {
-                            $('.my-card:nth-child(' + '1' + ')').addClass('active');
-                            $('.my-card:nth-child(' + '1' + ')').prev().addClass('prev');
-                            $('.my-card:nth-child(' + '1' + ')').next().addClass('next');
-                        } else {
-                            $('.my-card:nth-child(' + $odd + ')').addClass('active');
-                            // $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
-                            // $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
-                        }
-
-
-                        $('.my-card').click(function() {
-                            $slide = $('.active').width();
-                            console.log($('.active').position().left);
-
-                            if ($(this).hasClass('next')) {
-                                $('.card-carousel').stop(false, true).animate({
-                                    left: '-=' + $slide
-                                });
-                            } else if ($(this).hasClass('prev')) {
-                                $('.card-carousel').stop(false, true).animate({
-                                    left: '+=' + $slide
-                                });
-                            }
-
-                            $(this).removeClass('prev next');
-                            $(this).siblings().removeClass('prev active next');
-
-                            $(this).addClass('active');
-                            $(this).prev().addClass('prev');
-                            $(this).next().addClass('next');
-                        });
-
-                        // Keyboard nav
-                        $('html body').keydown(function(e) {
-                            if (e.keyCode == 37) { // left
-                                $('.active').prev().trigger('click');
-                            } else if (e.keyCode == 39) { // right
-                                $('.active').next().trigger('click');
-                            }
-                        });
-                    </script>
-                    <script type="text/javascript">
-                        var _gaq = _gaq || [];
-                        _gaq.push(['_setAccount', 'UA-36251023-1']);
-                        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-                        _gaq.push(['_trackPageview']);
-
-                        (function() {
-                            var ga = document.createElement('script');
-                            ga.type = 'text/javascript';
-                            ga.async = true;
-                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                            var s = document.getElementsByTagName('script')[0];
-                            s.parentNode.insertBefore(ga, s);
-                        })();
-                    </script>
                 </div>
+
                 <p>* Darkhorse has up to the minute scoring and features similar to other venture backed DFS companies, all built with web scraping.</p>
 
 
@@ -367,22 +301,10 @@
                 <br>
                 <br>
 
-                <!-- <h3>Gattaca Science Quiz</h3>
-                <img src="./img/titan.jpeg" class="portfolio-image no-border" alt="Gattaca Quiz screenshot">
-                <h3>Gattaca Science Quiz</h3>
-                <p>A small homage to one of my favorite movies -- Gattaca. Test your science knowledge with 6 questions based on true science in the movie.</p>
-                <h3>Tech Stack</h3>
-                <p>HTML, CSS, jQuery</p>
-                <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/Gattaca_Science_Quiz/">Live</a>
-                <br>
-                <br>
-                <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/Gattaca_Science_Quiz">GitHub</a> -->
-
 
             </section>
 
 
-            <!-- <hr> -->
 
 
     </main>
