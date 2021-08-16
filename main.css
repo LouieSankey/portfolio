@@ -4,6 +4,50 @@
     pointer-events: none;
 }
 
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.intro-span {
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 1px;
+    border-radius: 2px;
+
+}
+
+.strike>span {
+    position: relative;
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.strike>span:before,
+.strike>span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: black;
+}
+
+.strike>span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike>span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
 
 /* .img {
     border-radius: 15px !important;
@@ -611,18 +655,22 @@ form input {
         float: left;
         margin-right: 10px;
     }
+
     .headline {
         margin-top: 100px;
         margin-bottom: 20px;
     }
+
     #photo-background {
         margin: unset;
         width: unset;
     }
+
     .headline-container {
         min-width: 100px;
         display: inline;
     }
+
     .social-icons {
         cursor: pointer;
         position: absolute;
@@ -632,14 +680,17 @@ form input {
         float: right;
         height: 60px;
     }
+
     .header {
         width: 95%;
         margin: auto;
     }
+
     #title-text {
         text-align: left;
         width: 600px
     }
+
     /* .description {
             height: 340px;
         }
@@ -667,6 +718,7 @@ form input {
         display: table;
         clear: both;
     }
+
     nav ul li a:link {
         color: #27537A;
         margin: 30px;
