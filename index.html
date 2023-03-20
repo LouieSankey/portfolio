@@ -1,382 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta property="og:image" content="https://louiesankey.github.io/img/spiralprod.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      property="og:image"
+      content="https://louiesankey.github.io/img/spiralprod.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
     <title>Louie Sankey : Software Engineer</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0MB2S1QJ1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G0MB2S1QJ1"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="index.js"></script>
     <script src="./jquery.film_roll.min.js"></script>
     <script>
-        $(function() {
-            fr = new FilmRoll({
-                container: '#film_roll',
-                height: 330,
-                scroll: false
-            });
-        });
+      $(function () {
+        fr = new FilmRoll({
+          container: '#film_roll',
+          height: 330,
+          scroll: false
+        })
+      })
     </script>
 
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-G0MB2S1QJ1');
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'G-G0MB2S1QJ1')
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Heading -->
     <header>
-        <section class="header">
-            <h1 id="title-text" class="center-  text">Louis Sankey <span class="sub-title">Software Developer.</span></h1>
-
-            <div class="social-icons-display">
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/louissankey/" target="blank">
-                        <img class="social-icon" src="./img/social-linkedin.png" alt=""></a>
-                    <a href="https://github.com/louiesankey" target="blank">
-                        <img class="social-icon" src="./img/social-github.png" alt=""></a>
-
-                    <a href="https://stackoverflow.com/users/3692615/louie-sankey?tab=profile" target="blank">
-                        <img class="social-icon" src="./img/social-stackoverflow.png" alt=""></a>
-
-                    <a href="mailto:lmsankey@ucdavis.edu" target="blank">
-                        <img class="social-icon" src="./img/social-mail.png" alt=""></a>
-
-                </div>
-
-            </div>
-
-
-        </section>
+      <section class="header">
+        <h1 id="title-text" class="center- text">
+          Louis Sankey <span class="sub-title">Software Developer.</span>
+        </h1>
+        <div class="social-icons-display">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/louissankey/" target="blank">
+              <img class="social-icon" src="./img/social-linkedin.png" alt=""
+            /></a>
+            <a href="https://github.com/louiesankey" target="blank">
+              <img class="social-icon" src="./img/social-github.png" alt=""
+            /></a>
+            <a
+              href="https://stackoverflow.com/users/3692615/louie-sankey?tab=profile"
+              target="blank"
+            >
+              <img
+                class="social-icon"
+                src="./img/social-stackoverflow.png"
+                alt=""
+            /></a>
+            <a href="mailto:lmsankey@ucdavis.edu" target="blank">
+              <img class="social-icon" src="./img/social-mail.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
     </header>
 
     <!-- Main -->
     <main class="wrapper">
-
-        <!-- Introduction -->
-        <section class="black-background">
-            <div id="photo-background">
-                <img id="profile-photo" src="./img/prof-pic2.png" alt="Louis Sankey - Profile Photo">
-            </div>
-            <div class="headline-container">
-
-                <h3 class="headline">Hello</h3>
-                <p class="sub-headline">I'm Louis, a software developer with a background in philosophy, creative writing, design thinking, and entrepreneurship. </p>
-            </div>
-        </section>
-
-        <br>
-        <br>
-        <hr>
-
-        <section>
-            <br>
-            <h3 id="about">About Me</h3>
-
-     <p>About eight years ago I started programming in Android using Java. I was immediately captivated by the fact that I could create my own original products, while at the same time learning skills that were valuable in the job market. </p>
-        
-       <p> I started developing a fantasy sports company, which turned into a multi-year passion project. And needless to say, during that time I learned a lot. </p> 
-       <p>Most importantly, I learned self reliance as a developer and gained a  ‘never say die’ attitude when it comes to fixing problems. </p>
-       <p>I eventually switched from native Android to native IOS, and completed that project in Swift. </p> 
-       <p>More recently, I worked as a full stack web developer for <a href="https://www.dabblewriter.com" target="blank">Dabble</a>. And now I'm looking for a new opportunity where I can continue to stay remote, and work with a good group of people.</p>
-       <p>Everything you see below is designed, wire-framed, and developed by yours truly.</p>
-       <p>If you like my work, <a href="mailto:louismsankey@gmail.com" target="blank">Email Me</a></p>
-
-        </section>
-
-        <br><br>
-        <br>
-        <br>
-        <div class="strike">
-            <span>Native Mobile</span>
-         </div>
-
-        <br><br>
-        <!-- Mobile App -->
-        <section>
-            <div class='item'>
-                <div class="li-header">
-                    <img class="quik-logo" src="./img/darkhorse-app-icon.png" alt="Darkhors app icon">
-                </div>
-
-                <h3>Darkhorse - Daily Fantasy Sports</h3>
-
-                <p>Live for 2022-2023 NBA season!</p>
-                <p class="tech-stack">Native IOS Development with XCode, Swift5, MVC architecture, & OOP. Serverless Backend Architecture with Google Cloud Functions, Typescript, & Firestore DB. </p>
-            
-
-                <br>
-
-
-
-                <img src="./img/darkhorsescreenshots.png" class="portfolio-image" alt="Darkhorse app screenshot">
-                <br><br>
-
-                <p>With traditional daily fantasy sports, the goal is to build a fantasy team of players on a single game basis, while keeping your budget under a given ‘salary cap’.</p>
-                <p>With Darkhorse, you’re also given a salary cap, but instead of drafting a full team, you draft a single player, then use what’s left of your salary cap to buy additional game stats. </p>
-                <p>If you draft an inexpensive ‘dark horse’ player, you’ll keep more of your remaining salary cap for stat buying.</p>
-                <p>This gives lesser players a better chance at victory.</p>
-                <p>Spend wisely and you'll help your player hit key achievements that boost his score above the competition.
-                </p>
-                <br>
-                <div id="film_roll">
-                    <div>
-                        <a href="..."><img class="dh-image" src="./img/NBA1.png"> </a>
-                    </div>
-                    <div>
-                        <a href="..."><img class="dh-image" src="./img/NBA2.png"> </a>
-                    </div>
-                    <div>
-                        <a href="..."><img class="dh-image" src="./img/NBA3.png"> </a>
-                    </div>
-                    <div>
-                        <a href="..."><img class="dh-image" src="./img/NBA4.png"> </a>
-                    </div>
-                    <div>
-                        <a href="..."><img class="dh-image" src="./img/NBA5.png"> </a>
-                    </div>
-                    <div>
-                        <a href="..."><img class="dh-image" src="./img/NBA7.png"> </a>
-                    </div>
-
-                </div>
-
-                <p>Darkhorse has up to the minute scoring and features similar to other venture backed DFS companies, all built with web scraping - a true hacker project!</p>
-                <br>
-          
-                <p>I'm also currently refactoring the client side from MVC to MVVM with Combine, and making some other code improvements to the typescript backend!</p>
-     
-                <a target="_blank" href="https://github.com/LouieSankey/Darkhorse_Google_Cloud_Functions">Serverless Backend Functions</a> 
-                <br>
-                <br>
-
-                <a class="portfolio-link" target="_blank" href="https://testflight.apple.com/join/VvpAAjmW">Install Beta (Live now for 2022-2023 NBA season!)</a> 
-                <br>
-                <br>
-
-               
-
-<hr>
-
-                <br>
-                <br> 
-
-                <h2>Darkhorse 1.0 & 2.0</h2>
-                <p class="tech-stack">Native Android with Android Studio, Java, MVC architecture, OOP, and Firebase.</p>
-
-                <br>
-
-                <img src="./img/darkhorse_V2.png" class="portfolio-image" alt="Darkhorse app screenshot">
-                <p>Before developing the 'final' version for IOS, I developed at least 3 prototypes while learning Android and Java. Here are two that still compile with Android Studio.</p>
-                
-
-            
-
-                <a target="_blank" href="https://github.com/LouieSankey/Darkhorse_V2_Android">Android/Java 2.0 Repo</a> 
-                <br>
-                <br>
-
-                <a target="_blank" href="https://github.com/LouieSankey/Darkhorse_Android_V1">Android/Java 1.0 Repo</a> 
-                <br>
-                <br>
-
-              
-
-            </div>
-
-            </div>
-
-            </div>
-
-
-
-        </section>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="strike">
-            <span>Full Stack React/Node.js</span>
-         </div>
-
-        <br>
-        <br>
-
-        <section>
-
-            <div class="li-header">
-                <img class="quik-logo" src="./img/spiral-icon.png" alt="Spiral app icon">
-            </div>
-            <h3>Spiral - Time-Tracking, Productivity.</h3>
-            <p class="tech-stack">React, Context API, Apex Charts, Node.js, Express, PostgreSQL, UI/UX Design, Wireframing, User Stories.</p>
-            <br>
-            <img src="./img/spiral-mock.png " class="portfolio-image " alt="Spiral app homepage">
-            <div class="description">
-                <p>Spiral is perhaps the first time tracking software that is designed from the start to help you work <em>faster</em>.</p>
-
-                <p>Start by estimating a time frame for your task, then work towards coming in under your estimate.</p>
-                <p>Use Spiral to track and improve your time efficiency at anything you'd like.</p>
-
-                <p>Use it regularly while you work to take advantage of inbuilt time tracking, break management, and productivity insights.</p>
-
-
-
-                <a class="project-links" target="_blank" href="https://SpiralProductivity.com/">Live Site</a>
-                <br>
-                <br>
-
-                <p>I also recently used Capacitor to turn this into a mobile app, which will soon be available for IOS and Android. You can download the IOS beta here:</p>
-                <a class="project-links" target="_blank" href="https://testflight.apple.com/join/0sAkgmv7">Download Beta Through App Store</a>
-                <br>
-                <br>
-      
-
-
-            </div>
-            <hr>
-
-            <br>
-            <div class="li-header">
-                <img class="quik-logo" src="./img/quik-logo-10.png" alt="Quik app logo">
-            </div>
-            <h3>Quik - Dating, Meetup.</h3>
-            <p class="tech-stack">Javascirpt ES6, React Hooks, Node.js, Express, Socket.io, PostgreSQL,  Leaflet Maps, Map Box, and The Foursquare API.</p>
-            <br>
-
-            <img src="./img/quik-background-2.png" class="portfolio-image quik-image" alt="Quik app home">
-
-            <p>
-
-                Quik is destination based dating for people looking to explore their city. </p> 
-                <p>
-           
-           Instead of swiping endlessly (like with Tinder and many similar apps), with Quik you pin locations you're already interested in going to and then start to look for potential matches from there. </p>
-            <p>To add to the mystery (and also provide a layer of security), you won't know the exact location you matched with anyone until you mutually agree to reveal it. </p>
-            <p>It's designed for a simple, fun, and serendipitous user experience.</p>
-            <a class="project-links" target="_blank" href="https://quik.vercel.app/">Live Site</a>
-            <br>
-            <br>
-            <a class="project-links" target="_blank" href="https://github.com/LouieSankey/quik_dating">Client Repo</a>
-            <br>
-            <br>
-
-            <a class="project-links" target="_blank" href="https://github.com/LouieSankey/quik_server">API Repo</a>
-
-
-            <hr>
-
-            <br>
-            <div class="li-header">
-
-                <img class="algo-logo" src="./img/Lighning-Algo-icon.png" alt="Algo Lightning App Logo">
-            </div>
-            <h3>Lightning Algo - Interview Prep</h3>
-            <p class="tech-stack">Redux, React Hooks, Node.js, Express, Postgres, and React Beautiful Drag and Drop. </p>
-            <br>
-
-            <img src="./img/lightning-algo-screenshot.jpeg" class="portfolio-image quik-image" alt="Quik app home">
-        </p><p>
-              Similar to a word jumble game, Lightning Algo randomizes the lines of an algorithm and let's you drag them back into the correct order. 
-         With Lightning Algo, the name of the game is speed. Create custom lists of algorithms, then work on cycling through and descrambling them quickly to beat your previous best times.</p>
-            <p>Lightning Algo gives you a way to quickly and actively review any algorithms that you need to know for work or an upcoming interview.</p>
-        <p>This is currently a prototype in 'demo' mode and a few features are disabled, but if you're an employer you can still check out some of the algorithms I've been reviewing ;-) </p>
-
-            <a class="project-links" target="_blank" href="https://lightning-algo.vercel.app/">Live Site</a>
-            <br>
-            <br>
-            <a class="project-links" target="_blank" href="https://github.com/LouieSankey/Lightning_Algo">Client Repo</a>
-            <br>
-            <br>
-
-            <br>
-            <br>
-          
-            <div class="strike">
-                <span>HTML, CSS, JQUERY</span>
-             </div>
-            <br><br>
-            <section>
-
-            
-                <h3>Fridge-Side</h3>
-                <p>HTML, CSS, jQuery, Node.js, Express, Twillio, and the Spoonacular API</p>
-                <br>
-                <img src="./img/fridge-side-white.png" class="portfolio-image" alt="Fridge-side screenshot">
-
-                <p>Fridge-side is a recipes search app that lets you find new recipes based on ingredients you already have in your home. </p>
-                <p>After adding missing ingredients to a shopping list, Fridge-side lets you send the list to your phone via SMS for easy access next time you're grocery shopping.</p>
-                <p>To make it more memorable, it's styled like notes on the side of a refrigerator. </p>
-
-                <p>Go ahead and give it a try!</p>
-                <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/Fridge_Side/"> Live Site</a>
-                <br>
-                <br>
-                <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/Fridge_Side">Client Repo</a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <hr>
-
-                <h3>Gattaca - True Science in the Movie Quiz</h3>
-                <p>jQuery, HTML, CSS, </p>
-<br>
-<img src="./img/titan.jpeg" class="portfolio-image" alt="Fridge-side screenshot">
-
-                <p>A small homage to one of my favorite movies. Test your science knowledge with 6 questions base on true science in the move Gattaca</p>
-                
-                <a target="_blank" class="portfolio-link" href="https://louiesankey.github.io/Gattaca_Science_Quiz/">Live</a>
-                <a target="_blank" class="portfolio-link" href="https://github.com/LouieSankey/Gattaca_Science_Quiz">GitHub</a>
-                
-                
-                <br>
-                <br>
-                <br>
-                <br>
-                <hr>
-
-                <p>That's it for now, if you like my work don't hesitate to reach out.</p>
-                <a href="mailto:lmsankey@ucdavis.edu" target="blank">Email Me</a>
-
-
-                <br>
-                <br>
-
-
-            </section>
-
-
-
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div>
-            <p class="footer">Copyright 2021 - Louis Sankey</p>
+      <!-- Introduction -->
+      <section class="black-background">
+        <div id="photo-background">
+          <img
+            id="profile-photo"
+            src="./img/prof-pic2.png"
+            alt="Louis Sankey - Profile Photo"
+          />
         </div>
-    </footer>
+        <div class="headline-container">
+          <h3 class="headline">Hello</h3>
+          <p class="sub-headline">
+            I'm Louis, a software developer with a background in philosophy,
+            creative writing, design thinking, and entrepreneurship.
+          </p>
+        </div>
+      </section>
 
+      <br />
+      <br />
+      <hr />
 
+      <section>
+        <br />
+        <h3 id="about">About Me</h3>
+        <p>
+          About eight years ago I started programming in Android using Java. I
+          was immediately captivated by the fact that I could create my own
+          original products, while at the same time learning skills that were
+          valuable in the job market.
+        </p>
 
-</body>
+        <p>
+          I started developing a fantasy sports company, which turned into a
+          multi-year passion project. And needless to say, during that time I
+          learned a lot.
+        </p>
+        <p>
+          Most importantly, I learned self reliance as a developer and gained a
+          ‘never say die’ attitude when it comes to fixing problems.
+        </p>
+        <p>
+          I eventually switched from native Android to native IOS, and completed
+          that project in Swift.
+        </p>
+        <p>
+          More recently, I worked as a full stack web developer for
+          <a href="https://www.dabblewriter.com" target="blank">Dabble</a>. And
+          now I'm looking for my next position as a mid-level or senior
+          developer!
+        </p>
+        <p>
+          Everything you see below is designed, wire-framed, and developed by
+          yours truly.
+        </p>
+        <p>
+          If you like my work,
+          <a href="mailto:louismsankey@gmail.com" target="blank">Email Me</a>
+        </p>
+      </section>
 
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="strike">
+        <span><b> Native Mobile Section</b></span>
+      </div>
+
+      <br /><br />
+      <!-- Mobile App -->
+      <section>
+        <div class="item">
+          <div class="li-header">
+            <img
+              class="quik-logo"
+              src="./img/darkhorse-app-icon.png"
+              alt="Darkhors app icon"
+            />
+          </div>
+
+          <h3>Darkhorse - Daily Fantasy Sports</h3>
+          <!-- <p>Live for 2022-2023 NBA season!</p> -->
+          <h4>Technologies:</h4>
+          <p class="tech-stack">
+            <b>Native IOS: </b> Swift 5, Cocoapods, MVVM architecture, UI/UX
+            design.
+          </p>
+
+          <p>
+            <b>Backend:</b> Node.js, Serverless Architecture, Google Cloud
+            Functions, Web-scraping, Cron-Jobs, Firestore.
+          </p>
+          <br />
+          <img
+            src="./img/darkhorsescreenshots.png"
+            class="portfolio-image"
+            alt="Darkhorse app screenshot"
+          />
+          <br />
+          <br />
+          <h4>Concept:</h4>
+          <p>
+            With traditional daily fantasy sports, the goal is to build a
+            fantasy team of players on a single game basis, while keeping your
+            budget under a given ‘salary cap’.
+          </p>
+          <p>
+            With Darkhorse, you’re also given a salary cap, but instead of
+            drafting a full team, you draft a single player, then use what’s
+            left of your salary cap to buy additional game stats.
+          </p>
+          <p>
+            If you draft an inexpensive ‘dark horse’ player, you’ll keep more of
+            your remaining salary cap for stat buying.
+          </p>
+          <p>This gives lesser players a better chance at victory.</p>
+          <p>
+            Spend wisely and you'll help your player hit key achievements that
+            boost his score above the competition.
+          </p>
+
+          <br />
+          <h4>My Designs and Marketing:</h4>
+          <div id="film_roll">
+            <div>
+              <a href="..."><img class="dh-image" src="./img/NBA1.png" /> </a>
+            </div>
+            <div>
+              <a href="..."><img class="dh-image" src="./img/NBA2.png" /> </a>
+            </div>
+            <div>
+              <a href="..."><img class="dh-image" src="./img/NBA3.png" /> </a>
+            </div>
+            <div>
+              <a href="..."><img class="dh-image" src="./img/NBA4.png" /> </a>
+            </div>
+            <div>
+              <a href="..."><img class="dh-image" src="./img/NBA5.png" /> </a>
+            </div>
+            <div>
+              <a href="..."><img class="dh-image" src="./img/NBA7.png" /> </a>
+            </div>
+          </div>
+          <p>
+            Darkhorse has up to the minute scoring and features similar to other
+            venture backed DFS companies, all built with web scraping - a true
+            hacker project!
+          </p>
+          <h4>Code Viewable Upon Request</h4>
+          <a
+            class="portfolio-link"
+            target="_blank"
+            href="https://testflight.apple.com/join/VvpAAjmW"
+            >Install for IPhone</a
+          >
+          <br />
+          <br />
+          <hr />
+          <br />
+          <br />
+          <h2>Darkhorse 1.0 & 2.0 (Retired)</h2>
+          <h4>Technologies:</h4>
+          <p class="tech-stack">
+            <b>Client:</b> Android Studio, Gradle, Java & Collections Framework,
+            XML, REST, JSON, MVC architecture, OOP, serializing data, background
+            tasks, async programming.
+          </p>
+          <p>
+            <b>Backend:</b> Node.js, Javascript, Firebase, api-basketball.com.
+          </p>
+
+          <br />
+          <img
+            src="./img/darkhorse_V2.png"
+            class="portfolio-image"
+            alt="Darkhorse app screenshot"
+          />
+          <p>
+            Before developing the 'final' version for IOS, I developed at least
+            3 prototypes while learning Android and Java. Here are two that
+            still compile with Android Studio.
+          </p>
+          <a
+            target="_blank"
+            href="https://github.com/LouieSankey/Darkhorse_V2_Android"
+            >Android/Java 2.0 Repo</a
+          >
+          <br />
+          <br />
+          <a
+            target="_blank"
+            href="https://github.com/LouieSankey/Darkhorse_Android_V1"
+            >Android/Java 1.0 Repo</a
+          >
+          <br />
+          <br />
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="strike">
+        <span>Full Stack React/Node.js</span>
+      </div>
+      <br />
+      <br />
+      <section>
+        <div class="li-header">
+          <img
+            class="quik-logo"
+            src="./img/spiral-icon.png"
+            alt="Spiral app icon"
+          />
+        </div>
+        <h3>Spiral - Time-Tracking, Productivity.</h3>
+        <p class="tech-stack">
+          React, Context API, Apex Charts, Node.js, Express, PostgreSQL, UI/UX
+          Design, Wireframing, User Stories.
+        </p>
+        <br />
+        <img
+          src="./img/spiral-mock.png "
+          class="portfolio-image"
+          alt="Spiral app homepage"
+        />
+        <div class="description">
+          <p>
+            Spiral is perhaps the first time tracking software that is designed
+            from the start to help you work <em>faster</em>.
+          </p>
+
+          <p>
+            Start by estimating a time frame for your task, then work towards
+            coming in under your estimate.
+          </p>
+          <p>
+            Use Spiral to track and improve your time efficiency at anything
+            you'd like.
+          </p>
+
+          <p>
+            Use it regularly while you work to take advantage of inbuilt time
+            tracking, break management, and productivity insights.
+          </p>
+
+          <a
+            class="project-links"
+            target="_blank"
+            href="https://SpiralProductivity.com/"
+            >Live Site</a
+          >
+          <br />
+          <br />
+
+          <p>
+            I also recently used Capacitor to turn this into a mobile app, which
+            will soon be available for IOS and Android. You can download the IOS
+            beta here:
+          </p>
+          <a
+            class="project-links"
+            target="_blank"
+            href="https://testflight.apple.com/join/0sAkgmv7"
+            >Download Beta Through App Store</a
+          >
+          <br />
+          <br />
+        </div>
+        <hr />
+        <br />
+        <div class="li-header">
+          <img
+            class="quik-logo"
+            src="./img/quik-logo-10.png"
+            alt="Quik app logo"
+          />
+        </div>
+        <h3>Quik - Dating, Meetup.</h3>
+        <p class="tech-stack">
+          Javascirpt ES6, React Hooks, Node.js, Express, Socket.io, PostgreSQL,
+          Leaflet Maps, Map Box, and The Foursquare API.
+        </p>
+        <br />
+        <img
+          src="./img/quik-background-2.png"
+          class="portfolio-image quik-image"
+          alt="Quik app home"
+        />
+        <p>
+          Quik is destination based dating for people looking to explore their
+          city.
+        </p>
+        <p>
+          Instead of swiping endlessly (like with Tinder and many similar apps),
+          with Quik you pin locations you're already interested in going to and
+          then start to look for potential matches from there.
+        </p>
+        <p>
+          To add to the mystery (and also provide a layer of security), you
+          won't know the exact location you matched with anyone until you
+          mutually agree to reveal it.
+        </p>
+        <p>
+          It's designed for a simple, fun, and serendipitous user experience.
+        </p>
+        <a class="project-links" target="_blank" href="https://quik.vercel.app/"
+          >Live Site</a
+        >
+        <br />
+        <br />
+        <a
+          class="project-links"
+          target="_blank"
+          href="https://github.com/LouieSankey/quik_dating"
+          >Client Repo</a
+        >
+        <br />
+        <br />
+        <a
+          class="project-links"
+          target="_blank"
+          href="https://github.com/LouieSankey/quik_server"
+          >API Repo</a
+        >
+        <hr />
+        <br />
+        <div class="li-header">
+          <img
+            class="algo-logo"
+            src="./img/Lighning-Algo-icon.png"
+            alt="Algo Lightning App Logo"
+          />
+        </div>
+        <h3>Lightning Algo - Interview Prep</h3>
+        <p class="tech-stack">
+          Redux, React Hooks, Node.js, Express, Postgres, and React Beautiful
+          Drag and Drop.
+        </p>
+        <br />
+        <img
+          src="./img/lightning-algo-screenshot.jpeg"
+          class="portfolio-image quik-image"
+          alt="Quik app home"
+        />
+        <p>
+          Similar to a word jumble game, Lightning Algo randomizes the lines of
+          an algorithm and let's you drag them back into the correct order. With
+          Lightning Algo, the name of the game is speed. Create custom lists of
+          algorithms, then work on cycling through and descrambling them quickly
+          to beat your previous best times.
+        </p>
+        <p>
+          Lightning Algo gives you a way to quickly and actively review any
+          algorithms that you need to know for work or an upcoming interview.
+        </p>
+        <p>
+          This is currently a prototype in 'demo' mode and a few features are
+          disabled, but if you're an employer you can still check out some of
+          the algorithms I've been reviewing ;-)
+        </p>
+        <a
+          class="project-links"
+          target="_blank"
+          href="https://lightning-algo.vercel.app/"
+          >Live Site</a
+        >
+        <br />
+        <br />
+        <a
+          class="project-links"
+          target="_blank"
+          href="https://github.com/LouieSankey/Lightning_Algo"
+          >Client Repo</a
+        >
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="strike">
+          <span>HTML, CSS, JQUERY</span>
+        </div>
+        <br /><br />
+        <section>
+          <h3>Fridge-Side</h3>
+          <p>
+            HTML, CSS, jQuery, Node.js, Express, Twillio, and the Spoonacular
+            API
+          </p>
+          <br />
+          <img
+            src="./img/fridge-side-white.png"
+            class="portfolio-image"
+            alt="Fridge-side screenshot"
+          />
+          <p>
+            Fridge-side is a recipes search app that lets you find new recipes
+            based on ingredients you already have in your home.
+          </p>
+          <p>
+            After adding missing ingredients to a shopping list, Fridge-side
+            lets you send the list to your phone via SMS for easy access next
+            time you're grocery shopping.
+          </p>
+          <p>
+            To make it more memorable, it's styled like notes on the side of a
+            refrigerator.
+          </p>
+          <p>Go ahead and give it a try!</p>
+          <a
+            target="_blank"
+            class="portfolio-link"
+            href="https://louiesankey.github.io/Fridge_Side/"
+          >
+            Live Site</a
+          >
+          <br />
+          <br />
+          <a
+            target="_blank"
+            class="portfolio-link"
+            href="https://github.com/LouieSankey/Fridge_Side"
+            >Client Repo</a
+          >
+          <br />
+          <br />
+          <br />
+          <br />
+          <hr />
+
+          <h3>Gattaca - True Science in the Movie Quiz</h3>
+          <p>jQuery, HTML, CSS,</p>
+          <br />
+          <img
+            src="./img/titan.jpeg"
+            class="portfolio-image"
+            alt="Fridge-side screenshot"
+          />
+          <p>
+            A small homage to one of my favorite movies. Test your science
+            knowledge with 6 questions base on true science in the move Gattaca
+          </p>
+          <a
+            target="_blank"
+            class="portfolio-link"
+            href="https://louiesankey.github.io/Gattaca_Science_Quiz/"
+            >Live</a
+          >
+          <a
+            target="_blank"
+            class="portfolio-link"
+            href="https://github.com/LouieSankey/Gattaca_Science_Quiz"
+            >GitHub</a
+          >
+          <br />
+          <br />
+          <br />
+          <br />
+          <hr />
+          <p>
+            That's it for now, if you like my work don't hesitate to reach out.
+          </p>
+          <a href="mailto:lmsankey@ucdavis.edu" target="blank">Email Me</a>
+          <br />
+          <br />
+        </section>
+        <footer>
+          <div>
+            <p class="footer">Copyright 2021 - Louis Sankey</p>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
 </html>
