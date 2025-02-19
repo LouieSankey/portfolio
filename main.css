@@ -232,10 +232,10 @@ a.portfolio-link:hover {
 }
 
 .portfolio-image {
-  width: 100%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(114, 114, 114);
+  /* width: 100%; */
+  /* border-style: solid; */
+  /* border-width: 2px; */
+  /* border-color: rgb(114, 114, 114); */
 }
 
 /* navigation code */
@@ -413,6 +413,20 @@ form input {
 }
 
 @media all and (min-width: 800px) {
+  .portfolio-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust spacing */
+  }
+
+  .portfolio-image {
+    max-width: 65%; /* Adjust width as needed */
+  }
+
+  .description {
+    flex: 1;
+  }
+
   #profile-photo {
     margin-top: -60px;
     margin-right: 0px;
