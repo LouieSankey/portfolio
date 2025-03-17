@@ -126,7 +126,7 @@ a.portfolio-link:hover {
 /* styles the title text */
 
 #title-text {
-  margin: 10px;
+  margin: 10px auto;
   font-size: 60px;
   text-align: center;
   font-family: 'Reenie Beanie', serif;
@@ -233,6 +233,17 @@ a.portfolio-link:hover {
 
 .portfolio-image {
   width: 100%;
+}
+
+/* Add styling for figure images */
+figure.project-image {
+  margin: 0;
+  width: 100%;
+}
+
+figure.project-image img {
+  width: 100%;
+  height: auto;
 }
 
 /* navigation code */
@@ -413,11 +424,11 @@ form input {
   .portfolio-container {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adjust spacing */
+    gap: 20px;
   }
 
   .portfolio-image {
-    max-width: 65%; /* Adjust width as needed */
+    max-width: 65%; 
   }
 
   .description {
@@ -464,30 +475,9 @@ form input {
   #title-text {
     text-align: left;
     width: 600px;
+    margin: 10px;
   }
 
-  /* .description {
-            height: 340px;
-        }
-  
-        .portfolio-list {
-            flex-direction: row;
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 100px;
-            list-style: none;
-            padding-left: 0;
-        }
-        .item {
-            flex: 1 50%;
-            padding: 10px;
-            list-style: none;
-        }
-        .column {
-            float: left;
-            width: 30%;
-        }
-        /* Clear floats after the columns */
   .row:after {
     content: '';
     display: table;
@@ -496,7 +486,6 @@ form input {
 
   nav ul li a:link {
     color: #27537a;
-    margin: 30px;
   }
 }
 
