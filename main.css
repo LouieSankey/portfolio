@@ -19,7 +19,9 @@
   white-space: nowrap;
 }
 .spiral-react-native {
-  width: 50%;
+  width: 85%; /* Default size for mobile */
+  margin: 0;
+  display: block;
 }
 
 .intro-span {
@@ -487,6 +489,10 @@ form input {
   nav ul li a:link {
     color: #27537a;
   }
+
+  .spiral-react-native {
+    width: 45%; /* Smaller on desktop */
+  }
 }
 
 .social-nav {
@@ -517,5 +523,26 @@ form input {
 
   .social-icons-list {
     justify-content: flex-end;
+  }
+}
+
+/* Add media query for small screens */
+@media screen and (max-width: 400px) {
+  .social-icon {
+    width: 40px;
+  }
+  
+  .social-icons-list {
+    gap: 0.25rem;
+  }
+
+  #profile-photo {
+    height: 220px; /* Make profile photo smaller on mobile */
+  }
+
+  .portfolio-image {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
   }
 }
